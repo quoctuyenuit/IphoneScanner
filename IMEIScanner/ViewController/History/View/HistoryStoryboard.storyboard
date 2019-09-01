@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vHZ-V5-OYc">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--History Table View Controller-->
+        <scene sceneID="6dD-I9-cfx">
+            <objects>
+                <tableViewController id="vHZ-V5-OYc" customClass="HistoryTableViewController" customModule="IMEIScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kam-tc-Gnw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" id="WcW-rZ-zkb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <gestureRecognizers/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="7MJ-ni-crC" appends="YES" id="e48-DM-bt7"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HistoryCell" editingAccessoryType="disclosureIndicator" id="C0O-za-p9E" customClass="HistoryTableViewCell" customModule="IMEIScanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C0O-za-p9E" id="jYn-3p-l5u" customClass="HistoryTableViewCell" customModule="IMEIScanner" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJJ-th-zWE">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ano-ug-9no">
+                                                    <rect key="frame" x="10" y="10" width="40" height="23.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="Y3f-fE-fii"/>
+                                                    </constraints>
+                                                    <state key="normal" image="ico_copy"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="012345678901234" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2e-5M-NsS">
+                                                    <rect key="frame" x="50" y="10" width="316" height="23.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Ano-ug-9no" firstAttribute="centerY" secondItem="gJJ-th-zWE" secondAttribute="centerY" id="65G-4S-kIh"/>
+                                                <constraint firstAttribute="trailing" secondItem="n2e-5M-NsS" secondAttribute="trailing" constant="10" id="GKL-oJ-70X"/>
+                                                <constraint firstItem="Ano-ug-9no" firstAttribute="top" secondItem="gJJ-th-zWE" secondAttribute="top" constant="10" id="Qvj-xt-xvP"/>
+                                                <constraint firstItem="n2e-5M-NsS" firstAttribute="leading" secondItem="Ano-ug-9no" secondAttribute="trailing" id="X3v-WW-Ims"/>
+                                                <constraint firstItem="Ano-ug-9no" firstAttribute="leading" secondItem="gJJ-th-zWE" secondAttribute="leading" constant="10" id="XFD-Zd-njT"/>
+                                                <constraint firstItem="n2e-5M-NsS" firstAttribute="top" secondItem="gJJ-th-zWE" secondAttribute="top" constant="10" id="dOR-Z5-DPt"/>
+                                                <constraint firstAttribute="bottom" secondItem="n2e-5M-NsS" secondAttribute="bottom" constant="10" id="gYn-GC-NNT"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ano-ug-9no" secondAttribute="bottom" constant="10" id="iD5-jM-ybR"/>
+                                                <constraint firstItem="n2e-5M-NsS" firstAttribute="centerY" secondItem="gJJ-th-zWE" secondAttribute="centerY" id="ulP-Oj-s13"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="gJJ-th-zWE" secondAttribute="bottom" id="SKf-5p-mX8"/>
+                                        <constraint firstItem="gJJ-th-zWE" firstAttribute="height" secondItem="jYn-3p-l5u" secondAttribute="height" id="kg6-6s-c0j"/>
+                                        <constraint firstItem="gJJ-th-zWE" firstAttribute="leading" secondItem="jYn-3p-l5u" secondAttribute="leading" id="otH-q0-LH2"/>
+                                        <constraint firstItem="gJJ-th-zWE" firstAttribute="top" secondItem="jYn-3p-l5u" secondAttribute="top" id="q9D-GR-j5V"/>
+                                        <constraint firstAttribute="trailing" secondItem="gJJ-th-zWE" secondAttribute="trailing" id="yzg-lk-wZT"/>
+                                        <constraint firstItem="gJJ-th-zWE" firstAttribute="width" secondItem="jYn-3p-l5u" secondAttribute="width" id="zHj-bc-bxe"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="copyButton" destination="Ano-ug-9no" id="Cqk-7P-0wl"/>
+                                    <outlet property="imeiLabel" destination="n2e-5M-NsS" id="ve8-WO-l57"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vHZ-V5-OYc" id="Unf-qB-xWd"/>
+                            <outlet property="delegate" destination="vHZ-V5-OYc" id="8PB-CR-lSU"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="searchBar" destination="WcW-rZ-zkb" id="6E6-Ra-QrW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ddp-3S-kqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7MJ-ni-crC">
+                    <connections>
+                        <action selector="hideKeyboard:" destination="vHZ-V5-OYc" id="tbK-Nq-U0e"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="45.535714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_copy" width="21" height="21"/>
+    </resources>
+</document>

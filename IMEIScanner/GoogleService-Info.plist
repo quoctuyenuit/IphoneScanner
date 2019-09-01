@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>832691409372-4h1nh67vloqlsl3080jb086pp6l2k7ec.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.832691409372-4h1nh67vloqlsl3080jb086pp6l2k7ec</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBkjK9Goc8fQCsiNMCl9jG1wOZLmPBMms4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>832691409372</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>tuyennq.IMEIScanner</string>
+	<key>PROJECT_ID</key>
+	<string>imeiscanner</string>
+	<key>STORAGE_BUCKET</key>
+	<string>imeiscanner.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:832691409372:ios:0692a5260bac069c</string>
+	<key>DATABASE_URL</key>
+	<string>https://imeiscanner.firebaseio.com</string>
+</dict>
+</plist>

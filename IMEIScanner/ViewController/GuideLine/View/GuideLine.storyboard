@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q5Z-ve-sp1">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guide Line View Controller-->
+        <scene sceneID="tTD-zA-WLy">
+            <objects>
+                <viewController id="Q5Z-ve-sp1" customClass="GuideLineViewController" customModule="IMEIScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LfF-uh-pan">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymb-Tc-0gq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsY-2z-zNN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2672"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HƯỚNG DẪN SỬ DỤNG" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIt-ZE-YO1">
+                                                <rect key="frame" x="0.0" y="20" width="414" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I. Quét thủ công" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGj-Yf-NsH">
+                                                <rect key="frame" x="10" y="74" width="394" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_manually" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-yn-5uR">
+                                                <rect key="frame" x="57" y="114.5" width="300" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="AzH-O5-tM6"/>
+                                                    <constraint firstAttribute="width" constant="300" id="NIF-Dv-k66"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="==&gt; Chọn &quot;Quét IMEI&quot; để chọn tải ảnh chứa IMEI cần quét." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihe-MN-X0Q">
+                                                <rect key="frame" x="10" y="524.5" width="394" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Ảnh được chọn từ thư viện hoặc camera)" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kee-tH-0xS">
+                                                <rect key="frame" x="10" y="565.5" width="394" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_manually_detected" translatesAutoresizingMaskIntoConstraints="NO" id="KSY-b8-9u1">
+                                                <rect key="frame" x="57" y="626" width="300" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="3lD-ca-bAJ"/>
+                                                    <constraint firstAttribute="height" constant="400" id="3y7-gV-dno"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sau khi đã chọn hình, ứng dụng tự động quét và hiển thị IMEI quét được" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHQ-Jw-w8S">
+                                                <rect key="frame" x="10" y="1036" width="394" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="II. Quét tự động" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avk-3m-lHo">
+                                                <rect key="frame" x="10" y="1097" width="394" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_automatic" translatesAutoresizingMaskIntoConstraints="NO" id="srn-my-HgG">
+                                                <rect key="frame" x="57" y="1138" width="300" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="dSD-y3-76d"/>
+                                                    <constraint firstAttribute="height" constant="400" id="pDk-hn-T1I"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="==&gt; Chỉnh cho máy quay thẳng đứng dễ nhìn IMEI sau đó chạm vào màn hình để quét IMEI." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpe-d7-bq3">
+                                                <rect key="frame" x="10" y="1548" width="394" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_automatic_detected" translatesAutoresizingMaskIntoConstraints="NO" id="g8z-AV-4VQ">
+                                                <rect key="frame" x="57" y="1629" width="300" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="98D-J0-3lX"/>
+                                                    <constraint firstAttribute="height" constant="400" id="O8e-aE-niT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="III. Kiểm tra IMEI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9D-kA-X6r">
+                                                <rect key="frame" x="10" y="2049" width="394" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sau khi quét được IMEI bạn có thể chọn &quot;Kiểm tra IMEI&quot; trên bảng kết quả để kiểm tra IMEI trên taoden.vn." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAB-BY-doo">
+                                                <rect key="frame" x="10" y="2079.5" width="394" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="exshop.vn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtP-AE-Kfg">
+                                                <rect key="frame" x="172.5" y="40" width="69" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IV. Cài đặt tự động sao chép" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMI-6b-W1t">
+                                                <rect key="frame" x="10" y="2160.5" width="394" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_settings" translatesAutoresizingMaskIntoConstraints="NO" id="j6Z-5i-v7I">
+                                                <rect key="frame" x="57" y="2201" width="300" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="7wQ-V3-Cq2"/>
+                                                    <constraint firstAttribute="height" constant="400" id="l7e-c9-DTv"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bật chế độ tự động sao chép bằng cách bất công tắc ở màn hình cài đặt." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az7-3j-1qd">
+                                                <rect key="frame" x="10" y="2611" width="394" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="b9D-kA-X6r" secondAttribute="trailing" constant="10" id="1fv-pj-i95"/>
+                                            <constraint firstItem="FIt-ZE-YO1" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" id="4Qc-Jn-MNf"/>
+                                            <constraint firstItem="FIt-ZE-YO1" firstAttribute="top" secondItem="rsY-2z-zNN" secondAttribute="top" constant="20" id="4qm-Ed-8jN"/>
+                                            <constraint firstItem="Az7-3j-1qd" firstAttribute="top" secondItem="j6Z-5i-v7I" secondAttribute="bottom" constant="10" id="5eh-JF-irr"/>
+                                            <constraint firstItem="Bpe-d7-bq3" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="6Ty-KI-MdW"/>
+                                            <constraint firstItem="AHQ-Jw-w8S" firstAttribute="top" secondItem="KSY-b8-9u1" secondAttribute="bottom" constant="10" id="71u-pR-AnN"/>
+                                            <constraint firstAttribute="trailing" secondItem="AHQ-Jw-w8S" secondAttribute="trailing" constant="10" id="7NW-ed-zJG"/>
+                                            <constraint firstItem="MtP-AE-Kfg" firstAttribute="top" secondItem="FIt-ZE-YO1" secondAttribute="top" constant="20" id="83i-nm-Xfh"/>
+                                            <constraint firstItem="Kee-tH-0xS" firstAttribute="top" secondItem="Ihe-MN-X0Q" secondAttribute="bottom" id="8HO-ON-oY6"/>
+                                            <constraint firstAttribute="trailing" secondItem="QAB-BY-doo" secondAttribute="trailing" constant="10" id="8rQ-JJ-1Wd"/>
+                                            <constraint firstItem="g8z-AV-4VQ" firstAttribute="top" secondItem="Bpe-d7-bq3" secondAttribute="bottom" constant="40" id="Chf-vh-NN9"/>
+                                            <constraint firstItem="b9D-kA-X6r" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="D7k-ys-5DK"/>
+                                            <constraint firstItem="Az7-3j-1qd" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="D84-gn-1N7"/>
+                                            <constraint firstAttribute="bottom" secondItem="Az7-3j-1qd" secondAttribute="bottom" constant="20" id="E8y-8b-U8F"/>
+                                            <constraint firstItem="j6Z-5i-v7I" firstAttribute="centerX" secondItem="rsY-2z-zNN" secondAttribute="centerX" id="HDh-7r-2dr"/>
+                                            <constraint firstItem="g8z-AV-4VQ" firstAttribute="centerX" secondItem="rsY-2z-zNN" secondAttribute="centerX" id="I67-fG-WqU"/>
+                                            <constraint firstItem="srn-my-HgG" firstAttribute="centerX" secondItem="rsY-2z-zNN" secondAttribute="centerX" id="I7g-td-0GR"/>
+                                            <constraint firstItem="srn-my-HgG" firstAttribute="top" secondItem="avk-3m-lHo" secondAttribute="bottom" constant="20" id="I9O-Gu-zIj"/>
+                                            <constraint firstItem="kGj-Yf-NsH" firstAttribute="top" secondItem="FIt-ZE-YO1" secondAttribute="bottom" constant="30" id="IFY-Ig-BF5"/>
+                                            <constraint firstItem="KSY-b8-9u1" firstAttribute="centerX" secondItem="rsY-2z-zNN" secondAttribute="centerX" id="IsN-X5-2fo"/>
+                                            <constraint firstItem="W1T-yn-5uR" firstAttribute="centerX" secondItem="rsY-2z-zNN" secondAttribute="centerX" id="KsL-Po-l0u"/>
+                                            <constraint firstAttribute="trailing" secondItem="kGj-Yf-NsH" secondAttribute="trailing" constant="10" id="L4K-R9-RcY"/>
+                                            <constraint firstAttribute="trailing" secondItem="Az7-3j-1qd" secondAttribute="trailing" constant="10" id="Li4-LC-tRg"/>
+                                            <constraint firstItem="Ihe-MN-X0Q" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="Md7-Ku-cB9"/>
+                                            <constraint firstItem="MtP-AE-Kfg" firstAttribute="centerX" secondItem="rsY-2z-zNN" secondAttribute="centerX" id="Onr-yG-6W4"/>
+                                            <constraint firstAttribute="trailing" secondItem="FIt-ZE-YO1" secondAttribute="trailing" id="P1R-CF-Xma"/>
+                                            <constraint firstItem="j6Z-5i-v7I" firstAttribute="top" secondItem="DMI-6b-W1t" secondAttribute="bottom" constant="20" id="Pud-SK-q6v"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kee-tH-0xS" secondAttribute="trailing" constant="10" id="VDI-tn-ljP"/>
+                                            <constraint firstItem="AHQ-Jw-w8S" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="Z7T-ko-m6E"/>
+                                            <constraint firstAttribute="trailing" secondItem="avk-3m-lHo" secondAttribute="trailing" constant="10" id="ZXC-U0-2qf"/>
+                                            <constraint firstItem="b9D-kA-X6r" firstAttribute="top" secondItem="g8z-AV-4VQ" secondAttribute="bottom" constant="20" id="d2r-hB-30W"/>
+                                            <constraint firstItem="avk-3m-lHo" firstAttribute="top" secondItem="AHQ-Jw-w8S" secondAttribute="bottom" constant="20" id="eLk-0s-iGz"/>
+                                            <constraint firstItem="QAB-BY-doo" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="g1z-HN-7WZ"/>
+                                            <constraint firstItem="DMI-6b-W1t" firstAttribute="top" secondItem="QAB-BY-doo" secondAttribute="bottom" constant="20" id="g4f-MB-wrE"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bpe-d7-bq3" secondAttribute="trailing" constant="10" id="g6f-3t-M9j"/>
+                                            <constraint firstItem="kGj-Yf-NsH" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="gUm-lc-m0b"/>
+                                            <constraint firstItem="W1T-yn-5uR" firstAttribute="top" secondItem="kGj-Yf-NsH" secondAttribute="bottom" constant="20" id="huc-pj-Kh1"/>
+                                            <constraint firstItem="DMI-6b-W1t" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="hxw-Kp-L8D"/>
+                                            <constraint firstItem="Ihe-MN-X0Q" firstAttribute="top" secondItem="W1T-yn-5uR" secondAttribute="bottom" constant="10" id="lzQ-fV-Ng8"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="818" id="nEC-gw-gd6"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ihe-MN-X0Q" secondAttribute="trailing" constant="10" id="nNu-35-l1V"/>
+                                            <constraint firstItem="avk-3m-lHo" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="onr-ne-suW"/>
+                                            <constraint firstAttribute="trailing" secondItem="DMI-6b-W1t" secondAttribute="trailing" constant="10" id="sn2-UI-ubn"/>
+                                            <constraint firstItem="KSY-b8-9u1" firstAttribute="top" secondItem="Kee-tH-0xS" secondAttribute="bottom" constant="40" id="tNn-4H-t1a"/>
+                                            <constraint firstItem="Bpe-d7-bq3" firstAttribute="top" secondItem="srn-my-HgG" secondAttribute="bottom" constant="10" id="tgD-hX-Rpr"/>
+                                            <constraint firstItem="Kee-tH-0xS" firstAttribute="leading" secondItem="rsY-2z-zNN" secondAttribute="leading" constant="10" id="xSA-JU-VcX"/>
+                                            <constraint firstItem="QAB-BY-doo" firstAttribute="top" secondItem="b9D-kA-X6r" secondAttribute="bottom" constant="10" id="zUw-kN-Oe6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rsY-2z-zNN" firstAttribute="top" secondItem="Ymb-Tc-0gq" secondAttribute="top" id="2dN-0l-hAO"/>
+                                    <constraint firstAttribute="bottom" secondItem="rsY-2z-zNN" secondAttribute="bottom" id="3zO-JN-smF"/>
+                                    <constraint firstAttribute="trailing" secondItem="rsY-2z-zNN" secondAttribute="trailing" id="Yxc-Dk-F1Z"/>
+                                    <constraint firstItem="rsY-2z-zNN" firstAttribute="width" secondItem="Ymb-Tc-0gq" secondAttribute="width" id="mpR-07-Veo"/>
+                                    <constraint firstItem="rsY-2z-zNN" firstAttribute="leading" secondItem="Ymb-Tc-0gq" secondAttribute="leading" id="s9m-E5-3Xd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ymb-Tc-0gq" firstAttribute="bottom" secondItem="kU2-yK-uzv" secondAttribute="bottom" priority="700" id="8xF-Dg-3Vs"/>
+                            <constraint firstAttribute="trailing" secondItem="Ymb-Tc-0gq" secondAttribute="trailing" id="Orc-L6-bmt"/>
+                            <constraint firstItem="Ymb-Tc-0gq" firstAttribute="leading" secondItem="LfF-uh-pan" secondAttribute="leading" id="w2m-zY-M3y"/>
+                            <constraint firstItem="Ymb-Tc-0gq" firstAttribute="top" secondItem="kU2-yK-uzv" secondAttribute="top" id="zsJ-SM-KKm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kU2-yK-uzv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPR-oL-lsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="59.598214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="guide_automatic" width="150" height="267"/>
+        <image name="guide_automatic_detected" width="150" height="266"/>
+        <image name="guide_manually" width="150" height="267"/>
+        <image name="guide_manually_detected" width="150" height="266.5"/>
+        <image name="guide_settings" width="150" height="267"/>
+    </resources>
+</document>
