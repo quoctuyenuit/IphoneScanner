@@ -202,6 +202,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kU2-yK-uzv"/>
                     </view>
+                    <connections>
+                        <outlet property="guideContent1_1" destination="Ihe-MN-X0Q" id="lhz-Mp-buL"/>
+                        <outlet property="guideContent1_2" destination="Kee-tH-0xS" id="Pke-1d-ebP"/>
+                        <outlet property="guideContent1_3" destination="AHQ-Jw-w8S" id="lmA-QD-pVW"/>
+                        <outlet property="guideContent2_1" destination="Bpe-d7-bq3" id="eTC-No-heq"/>
+                        <outlet property="guideContent3_1" destination="QAB-BY-doo" id="Ho7-BY-d3L"/>
+                        <outlet property="guideContent4_1" destination="Az7-3j-1qd" id="uTf-0w-KaW"/>
+                        <outlet property="labelSubtitle1" destination="kGj-Yf-NsH" id="Kdt-t5-cn7"/>
+                        <outlet property="labelSubtitle2" destination="avk-3m-lHo" id="sgt-BC-pPv"/>
+                        <outlet property="labelSubtitle3" destination="b9D-kA-X6r" id="O9e-lg-bzA"/>
+                        <outlet property="labelSubtitle4" destination="DMI-6b-W1t" id="USc-F7-nHa"/>
+                        <outlet property="labelTitle" destination="FIt-ZE-YO1" id="waY-Yk-ddQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPR-oL-lsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

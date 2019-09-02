@@ -21,13 +21,13 @@ class HomeViewController: UIViewController, HomeViewProtocol {
     private lazy var items: [HomeCellModel] = {
         var items = [HomeCellModel]()
         items = [
-            HomeCellModel(identify: .manually, title: "Quét thủ công"),
-            HomeCellModel(identify: .automaticlly, title: "Quét tự động"),
-            HomeCellModel(identify: .aboutUs, title: "Liên hệ"),
-            HomeCellModel(identify: .guideLine, title: "Hướng dẫn sử dụng"),
-            HomeCellModel(identify: .settings, title: "Cài đặt"),
-            HomeCellModel(identify: .unlockIphone, title: "Unlock iPhone"),
-            HomeCellModel(identify: .checkImei, title: "Kiểm tra IMEI"),
+            HomeCellModel(identify: .manually, title: LocalizationHelper.shared.localized(Localizations.HOME_MANUALLY_SCAN)),
+            HomeCellModel(identify: .automaticlly, title: LocalizationHelper.shared.localized(Localizations.HOME_AUTOMATIC_SCAN)),
+            HomeCellModel(identify: .aboutUs, title: LocalizationHelper.shared.localized(Localizations.HOME_CONTACT)),
+            HomeCellModel(identify: .guideLine, title: LocalizationHelper.shared.localized(Localizations.HOME_GUIDE)),
+            HomeCellModel(identify: .unlockIphone, title: LocalizationHelper.shared.localized(Localizations.HOME_UNLOCK_IPHONE)),
+            HomeCellModel(identify: .checkImei, title: LocalizationHelper.shared.localized(Localizations.HOME_CHECK_IMEI)),
+            HomeCellModel(identify: .settings, title: LocalizationHelper.shared.localized(Localizations.HOME_SETTINGS)),
         ]
         return items
     }()
@@ -57,7 +57,7 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         super.viewDidLoad()
         self.setupView()
         self.collectionView.indicatorStyle = .white
-        self.title = "Trang chủ"
+        self.title = LocalizationHelper.shared.localized(Localizations.TITLE_HOME)
     }
     
     private func setupView() {

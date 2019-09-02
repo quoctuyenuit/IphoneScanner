@@ -17,9 +17,9 @@ fileprivate enum BarType {
     var name: String {
         switch self {
         case .home:
-            return "Trang chủ"
+            return LocalizationHelper.shared.localized(.TAB_HOME)
         case .history:
-            return "Lịch sử"
+            return LocalizationHelper.shared.localized(.TAB_HISTORY)
         }
     }
     var iconName: String {

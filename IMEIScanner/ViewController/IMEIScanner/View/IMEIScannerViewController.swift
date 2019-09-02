@@ -60,7 +60,7 @@ class IMEIScannerViewController: UIViewController, IMEIScannerViewProtocol {
     private lazy var btnScanIMEI: UIButton = {
         let btn = UIButton()
         btn.shadowAndRadius(cornerRadius: 5, shadowRadius: 3)
-        btn.setTitle("Quét IMEI", for: UIControl.State.normal)
+        btn.setTitle(LocalizationHelper.shared.localized(.BUTTON_CHECK_IMEI), for: UIControl.State.normal)
         btn.setTitleColor(UIColor.whiteTwo, for: UIControl.State.normal)
         btn.backgroundColor = UIColor.appBase
         btn.addTarget(self, action: #selector(scanIMEIAction(_:)), for: .touchUpInside)
@@ -75,7 +75,7 @@ class IMEIScannerViewController: UIViewController, IMEIScannerViewProtocol {
         super.viewDidLoad()
         self.setupView()
         self.boxService?.delegate = self
-        self.navigationItem.title = "Quét thủ công"
+        self.navigationItem.title = LocalizationHelper.shared.localized(Localizations.TITLE_MANUALLY_SCAN)
     }
 
     private func setupView() {

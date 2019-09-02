@@ -1,0 +1,51 @@
+//
+//localizations_en
+//IMEIScanner
+//
+//struct is generated from scrip, do not change any in this file.
+//created by tuyennq
+
+import Foundation
+
+class localizations_en {
+	static let NOTI_COPY_SUCCESS_MSG: String = "Already copied"
+	static let NOTI_SCAN_FAILT: String = "No results were found!"
+	static let TITLE_MANUALLY_SCAN: String = "Manual scanning"
+	static let TITLE_AUTOMATIC_SCAN: String = "Auto scanning"
+	static let TITLE_CONTACT: String = "Contact"
+	static let TITLE_GUIDE: String = "Guide"
+	static let TITLE_SETTINGS: String = "Setting"
+	static let TITLE_UNLOCK_IPHONE: String = "Unlock iPhone"
+	static let TITLE_CHECK_IMEI: String = "Check IMEI"
+	static let TITLE_ACTION_SCAN: String = "Touch to scan IMEI"
+	static let TITLE_HISTORY: String = "History"
+	static let TITLE_HOME: String = "Home"
+	static let HOME_MANUALLY_SCAN: String = "Manual scanning"
+	static let HOME_AUTOMATIC_SCAN: String = "Auto scanning"
+	static let HOME_CONTACT: String = "Contact"
+	static let HOME_GUIDE: String = "Guide"
+	static let HOME_SETTINGS: String = "Setting"
+	static let HOME_UNLOCK_IPHONE: String = "Unlock iPhone"
+	static let HOME_CHECK_IMEI: String = "Check IMEI"
+	static let CONTACT_TAODEN: String = "Check IMEI: taoden.vn"
+	static let CONTACT_PHONE_NUMBER1: String = "Phone: 0908.598.597"
+	static let CONTACT_PHONE_NUMBER2: String = "Phone: 0967.609.909"
+	static let CONTACT_FOOTER: String = "System of Apple repair services"
+	static let BUTTON_COPY_ALL: String = "Copy all"
+	static let BUTTON_CHECK_IMEI: String = "Check IMEI"
+	static let BUTTON_SCAN_IMEI: String = "Scan IMEI"
+	static let GUIDE_TITLE: String = "GUIDE"
+	static let GUIDE_SUBTITLE1: String = "I. Manual scanning"
+	static let GUIDE_SUBTITLE2: String = "II. Auto scanning"
+	static let GUIDE_SUBTITLE3: String = "III. Check IMEI"
+	static let GUIDE_SUBTITLE4: String = "IV. Auto copy settings"
+	static let GUIDE_CONTENT1_1: String = "Select Scan IMEI to choose to images containing the IMEI to be scanned."
+	static let GUIDE_CONTENT1_2: String = "(Photos selected from gallery or camera)"
+	static let GUIDE_CONTENT1_3: String = "After selecting the image the application automatically scans and displays the scanned IMEI"
+	static let GUIDE_CONTENT2_1: String = "Adjust IMEI vertical camera then touch the screen to scan IMEI."
+	static let GUIDE_CONTENT3_1: String = "After scanning IMEI you can select Check IMEI on the results table to check IMEI on taoden.vn."
+	static let GUIDE_CONTENT4_1: String = "Turn on the automatic copy mode by turning off the switch in the setting screen."
+	static let TAB_HOME: String = "Home"
+	static let TAB_HISTORY: String = "History"
+	static let STORE_NAME: String = "EXShop"
+}

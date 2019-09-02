@@ -1,0 +1,54 @@
+﻿stt,key,vie,en
+1,NOTI_COPY_SUCCESS_MSG,Đã sao chép,Already copied
+2,NOTI_SCAN_FAILT,Không tìm thấy kết quả!,No results were found!
+3,TITLE_MANUALLY_SCAN,Quét thủ công,Manual scanning
+4,TITLE_AUTOMATIC_SCAN,Quét tự động,Auto scanning
+5,TITLE_CONTACT,Liên hệ,Contact
+6,TITLE_GUIDE,Hướng dẫn,Guide
+7,TITLE_SETTINGS,Cài đặt,Setting
+8,TITLE_UNLOCK_IPHONE,Mở khoá iPhone,Unlock iPhone
+9,TITLE_CHECK_IMEI,Kiểm tra IMEI,Check IMEI
+10,TITLE_ACTION_SCAN,Chạm để quét IMEI,Touch to scan IMEI
+11,TITLE_HISTORY,Lịch sử,History
+12,TITLE_HOME,Trang chủ,Home
+13,HOME_MANUALLY_SCAN,Quét thủ công,Manual scanning
+14,HOME_AUTOMATIC_SCAN,Quét tự động,Auto scanning
+15,HOME_CONTACT,Liên hệ,Contact
+16,HOME_GUIDE,Hướng dẫn,Guide
+17,HOME_SETTINGS,Cài đặt,Setting
+18,HOME_UNLOCK_IPHONE,Mở khoá iPhone,Unlock iPhone
+19,HOME_CHECK_IMEI,Kiểm tra IMEI,Check IMEI
+20,CONTACT_TAODEN,Kiểm tra IMEI: taoden.vn,Check IMEI: taoden.vn
+21,CONTACT_PHONE_NUMBER1,SĐT: 0908.598.597,Phone: 0908.598.597
+22,CONTACT_PHONE_NUMBER2,SĐT: 0967.609.909,Phone: 0967.609.909
+23,CONTACT_FOOTER,Hệ thống dịch vụ sữa chữa Apple,System of Apple repair services
+24,BUTTON_COPY_ALL,Sao chép tất cả,Copy all
+25,BUTTON_CHECK_IMEI,Kiểm tra IMEI,Check IMEI
+26,BUTTON_SCAN_IMEI,Quét IMEI,Scan IMEI
+27,GUIDE_TITLE,HƯỚNG DẪN SỬ DỤNG,GUIDE
+28,GUIDE_SUBTITLE1,I. Quét thủ công,I. Manual scanning
+29,GUIDE_SUBTITLE2,II. Quét tự động,II. Auto scanning
+30,GUIDE_SUBTITLE3,III. Kiểm tra IMEI,III. Check IMEI
+31,GUIDE_SUBTITLE4,IV. Cài đặt tự động sao chép,IV. Auto copy settings
+32,GUIDE_CONTENT1_1,Chọn Quét IMEI để chọn ảnh chứa IMEI cần quét.,Select Scan IMEI to choose to images containing the IMEI to be scanned.
+33,GUIDE_CONTENT1_2,(Ảnh được chọn từ thư viện hoặc camera),(Photos selected from gallery or camera)
+34,GUIDE_CONTENT1_3,Sau khi đã chọn hình ứng dụng tự động quét và hiển thị IMEI quét được,After selecting the image the application automatically scans and displays the scanned IMEI
+35,GUIDE_CONTENT2_1,Chỉnh cho máy quay thẳng đứng dễ nhìn IMEI rồi sau đó chạm vào màn hình để quét IMEI.,Adjust IMEI vertical camera then touch the screen to scan IMEI.
+36,GUIDE_CONTENT3_1,Sau khi quét được IMEI bạn có thể chọn Kiểm tra IMEI trên bảng kết quả để kiểm tra IMEI trên taoden.vn.,After scanning IMEI you can select Check IMEI on the results table to check IMEI on taoden.vn.
+37,GUIDE_CONTENT4_1,Bật chế độ tự động sao chép bằng cách bất công tắc ở màn hình cài đặt.,Turn on the automatic copy mode by turning off the switch in the setting screen.
+38,TAB_HOME,Trang chủ,Home
+39,TAB_HISTORY,Lịch sử,History
+40,STORE_NAME,EXShop,EXShop
+41,,,
+42,,,
+43,,,
+44,,,
+45,,,
+46,,,
+47,,,
+48,,,
+49,,,
+50,,,
+51,,,
+52,,,
+53,,,

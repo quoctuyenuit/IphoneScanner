@@ -9,12 +9,27 @@
 import Foundation
 import UIKit
 
-enum AboutUsCellType: String, CaseIterable {
-    case header = "EXShop"
-    case taoden = "Kiểm tra IMEI: taoden.vn"
-    case phoneNumber1 = "SĐT: 0908.598.597"
-    case phoneNumber2 = "SĐT: 0967.609.909"
-    case footer = "Hệ thống dịch vụ sữa chữa Apple"
+enum AboutUsCellType: CaseIterable {
+    case header
+    case taoden
+    case phoneNumber1
+    case phoneNumber2
+    case footer
+    
+    var string: String {
+        switch self {
+        case .header:
+            return LocalizationHelper.shared.localized(Localizations.STORE_NAME)
+        case .taoden:
+            return LocalizationHelper.shared.localized(Localizations.TITLE_ACTION_SCAN)
+        case .phoneNumber1:
+            return LocalizationHelper.shared.localized(Localizations.CONTACT_PHONE_NUMBER1)
+        case .phoneNumber2:
+            return LocalizationHelper.shared.localized(Localizations.CONTACT_PHONE_NUMBER2)
+        case .footer:
+            return LocalizationHelper.shared.localized(Localizations.CONTACT_FOOTER)
+        }
+    }
     
     var icon: UIImage? {
         switch self {
@@ -46,7 +61,7 @@ struct ProfileCellModel {
     init(type: AboutUsCellType) {
         self.type = type
         self.icon = type.icon
-        self.title = type.rawValue
+        self.title = type.string
         self.subtitle = "exshop.vn"
     }
     

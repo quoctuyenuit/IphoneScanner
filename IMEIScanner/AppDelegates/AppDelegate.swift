@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 //        window?.rootViewController = IMEIScannerRouter.createIMEIScannerView()
         self.showMainViewController()
-        
+        Preferences.shared.setCurrentLocale(LangEn)
 //        self.registerForPushNotifications()
         return true
     }

@@ -29,7 +29,7 @@ class AboutUsViewController: UIViewController, AboutUsViewProtocol {
         super.viewDidLoad()
         self._listItems = self.presenter?.getListItems() ?? []
         self.setupView()
-        self.navigationItem.title = "Liên hệ"
+        self.navigationItem.title = LocalizationHelper.shared.localized(Localizations.TITLE_CONTACT)
     }
     
     private func setupView() {
@@ -67,7 +67,7 @@ extension AboutUsViewController: UITableViewDelegate {
         let item = self._listItems[indexPath.row]
 
         if item.type == .phoneNumber1 || item.type == .phoneNumber2 {
-            let phoneNumber = item.type.rawValue.matches(for: "(\\d)").joined(separator: "")
+            let phoneNumber = item.type.string.matches(for: "(\\d)").joined(separator: "")
 
             self.callNumber(phoneNumber: phoneNumber)
             

@@ -22,6 +22,9 @@
 		3D02311F230C4D9400A13216 /* SettingsGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D02311E230C4D9400A13216 /* SettingsGlobal.swift */; };
 		3D023122230C516800A13216 /* IMEIScannerVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D023121230C516800A13216 /* IMEIScannerVideoController.swift */; };
 		3D2E8A902319852E007FF3DD /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E8A8F2319852E007FF3DD /* HistoryDetailViewController.swift */; };
+		3D49A0DB231C2E3E0041DFD8 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49A0DA231C2E3E0041DFD8 /* Preferences.swift */; };
+		3D49A0DD231C2F570041DFD8 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49A0DC231C2F570041DFD8 /* LocalizationHelper.swift */; };
+		3D49A0E1231C36110041DFD8 /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49A0E0231C36110041DFD8 /* Localizations.swift */; };
 		3D4B4404231030CF00DAC9CF /* ResultBoardStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4B4403231030CF00DAC9CF /* ResultBoardStoryboard.storyboard */; };
 		3D4B4406231044FD00DAC9CF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B4405231044FD00DAC9CF /* HistoryTableViewCell.swift */; };
 		3D4B440823104DF000DAC9CF /* GuideLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B440723104DF000DAC9CF /* GuideLineViewController.swift */; };
@@ -67,7 +70,6 @@
 		3DF99EF022F874B800FB804F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF99EEF22F874B800FB804F /* String+Extensions.swift */; };
 		3DF99EF222F87E9900FB804F /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF99EF122F87E9900FB804F /* Image+Extensions.swift */; };
 		3DF9F0C2231ABE4700F2F314 /* IMEI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0C1231ABE4700F2F314 /* IMEI.swift */; };
-		3DF9F0C5231AC2A400F2F314 /* LocalizationStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0C4231AC2A400F2F314 /* LocalizationStrings.swift */; };
 		3DF9F0C7231AC3B200F2F314 /* AppNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0C6231AC3B200F2F314 /* AppNotify.swift */; };
 		7D5F67ADD96959330C55EA87 /* Pods_IMEIScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5997793B28D229C8C319E74 /* Pods_IMEIScanner.framework */; };
 		AA1D1BCDD8F48B18B62ADEC8 /* Pods_IMEIScannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3360EDF3EAF9F0F7E94A07 /* Pods_IMEIScannerTests.framework */; };
@@ -109,6 +111,9 @@
 		3D02311E230C4D9400A13216 /* SettingsGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGlobal.swift; sourceTree = "<group>"; };
 		3D023121230C516800A13216 /* IMEIScannerVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMEIScannerVideoController.swift; sourceTree = "<group>"; };
 		3D2E8A8F2319852E007FF3DD /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
+		3D49A0DA231C2E3E0041DFD8 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		3D49A0DC231C2F570041DFD8 /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
+		3D49A0E0231C36110041DFD8 /* Localizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
 		3D4B4403231030CF00DAC9CF /* ResultBoardStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultBoardStoryboard.storyboard; sourceTree = "<group>"; };
 		3D4B4405231044FD00DAC9CF /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		3D4B440723104DF000DAC9CF /* GuideLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideLineViewController.swift; sourceTree = "<group>"; };
@@ -161,7 +166,6 @@
 		3DF99EEF22F874B800FB804F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		3DF99EF122F87E9900FB804F /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		3DF9F0C1231ABE4700F2F314 /* IMEI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMEI.swift; sourceTree = "<group>"; };
-		3DF9F0C4231AC2A400F2F314 /* LocalizationStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationStrings.swift; sourceTree = "<group>"; };
 		3DF9F0C6231AC3B200F2F314 /* AppNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotify.swift; sourceTree = "<group>"; };
 		430A9F18E2BC4770AEC9CFE6 /* Pods_IMEIScannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEIScannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3360EDF3EAF9F0F7E94A07 /* Pods_IMEIScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEIScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -350,6 +354,14 @@
 			path = subview;
 			sourceTree = "<group>";
 		};
+		3D49A0D0231C2C7C0041DFD8 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				3D49A0E0231C36110041DFD8 /* Localizations.swift */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
 		3D6CDA2D230ED611008AADEA /* GuideLine */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +535,7 @@
 		3D8E193922F72CC300AD4E7E /* IMEIScanner */ = {
 			isa = PBXGroup;
 			children = (
+				3D49A0D0231C2C7C0041DFD8 /* Languages */,
 				3D6B311C2305B6200071E78D /* IMEIScanner.entitlements */,
 				3D8E197022F7300700AD4E7E /* AppDelegates */,
 				3DF99EEC22F8749D00FB804F /* Extensions */,
@@ -676,7 +689,8 @@
 			children = (
 				3DF99EE122F862DD00FB804F /* VisionService.swift */,
 				3DF99EE322F866DD00FB804F /* BoxService.swift */,
-				3DF9F0C4231AC2A400F2F314 /* LocalizationStrings.swift */,
+				3D49A0DA231C2E3E0041DFD8 /* Preferences.swift */,
+				3D49A0DC231C2F570041DFD8 /* LocalizationHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -823,6 +837,7 @@
 			knownRegions = (
 				en,
 				Base,
+				a,
 			);
 			mainGroup = 3D8E192E22F72CC300AD4E7E;
 			productRefGroup = 3D8E193822F72CC300AD4E7E /* Products */;
@@ -1052,8 +1067,10 @@
 				3D97ED0E22FB2F5B00AF2793 /* ShowResultsPresenter.swift in Sources */,
 				3D023109230C3B8B00A13216 /* HomeRouter.swift in Sources */,
 				3D023103230C3B1500A13216 /* HomeProtocol.swift in Sources */,
+				3D49A0DD231C2F570041DFD8 /* LocalizationHelper.swift in Sources */,
+				3D49A0DB231C2E3E0041DFD8 /* Preferences.swift in Sources */,
+				3D49A0E1231C36110041DFD8 /* Localizations.swift in Sources */,
 				3D97ED1422FB308100AF2793 /* IMEIResultCard.swift in Sources */,
-				3DF9F0C5231AC2A400F2F314 /* LocalizationStrings.swift in Sources */,
 				3D73DE35230D939500369906 /* ProfileHeaderViewCell.swift in Sources */,
 				3D97ED1022FB2F7C00AF2793 /* ShowResultsInteractor.swift in Sources */,
 				3DF7C27522FF180300A7DE99 /* NotificationPopup.swift in Sources */,

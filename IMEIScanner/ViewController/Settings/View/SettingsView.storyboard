@@ -57,6 +57,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="autoCopyTitle" destination="4aW-Lo-zX1" id="Egr-BZ-akb"/>
                         <outlet property="sw_autoCopy" destination="TFB-Jy-5IQ" id="5tu-bf-i1B"/>
                     </connections>
                 </tableViewController>

@@ -112,7 +112,7 @@ class IMEIScannerVideoController: UIViewController, IMEIScannerViewProtocol, AVC
         textlayer.frame = CGRect(x: 0, y: 20, width: self.view.bounds.width, height: Constants.TITLE_HEIGHT)
         textlayer.fontSize = 13
         textlayer.alignmentMode = .center
-        textlayer.string = "Chạm để quét IMEI"
+        textlayer.string = LocalizationHelper.shared.localized(Localizations.TITLE_ACTION_SCAN)
         textlayer.isWrapped = true
         textlayer.truncationMode = .end
         textlayer.backgroundColor = UIColor.clear.cgColor
@@ -189,7 +189,7 @@ class IMEIScannerVideoController: UIViewController, IMEIScannerViewProtocol, AVC
         self.startScanning()
         self.setupView()
         self.startLoadingView()
-        self.navigationItem.title = "Quét tự động"
+        self.navigationItem.title = LocalizationHelper.shared.localized(Localizations.TITLE_AUTOMATIC_SCAN)
     }
     
     deinit {

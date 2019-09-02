@@ -14,7 +14,7 @@ class SettingsTableViewController: UITableViewController {
         super.viewDidLoad()
         self.isAutoCopy = SettingsGlobal.isAutoCopy
         self.sw_autoCopy.setOn(self.isAutoCopy, animated: false)
-        self.navigationItem.title = "Cài đặt"
+        self.navigationItem.title = LocalizationHelper.shared.localized(Localizations.TITLE_SETTINGS)
     }
 
     // MARK: - Table view data source
@@ -35,6 +35,7 @@ class SettingsTableViewController: UITableViewController {
         }
     }
     
+    @IBOutlet weak var autoCopyTitle: UILabel!
     @IBOutlet weak var sw_autoCopy: UISwitch!
     @IBAction func switchAutoCopyAction(_ sender: Any) {
         self.isAutoCopy = self.sw_autoCopy.isOn
