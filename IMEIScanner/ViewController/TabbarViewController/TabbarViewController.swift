@@ -14,12 +14,15 @@ import SnapKit
 fileprivate enum BarType {
     case home
     case history
+    case setting
     var name: String {
         switch self {
         case .home:
             return LocalizationHelper.shared.localized(.TAB_HOME)
         case .history:
             return LocalizationHelper.shared.localized(.TAB_HISTORY)
+        case .setting:
+            return LocalizationHelper.shared.localized(.TAB_SETTING)
         }
     }
     var iconName: String {
@@ -28,22 +31,24 @@ fileprivate enum BarType {
             return "ico_home"
         case .history:
             return "ico_history"
+        case .setting:
+            return "ico_settings"
         }
     }
 }
 
 class TabBarViewController: UIViewController {
     
-    private lazy var viewControllers: [UIViewController] = {
+    private var viewControllers: [UIViewController] {
         return self.configure()
-    }()
+    }
     
     private var tabBarViewController: UITabBarController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .green
-        self.setupView()
+//        self.setupView()
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.barTintColor = .appBase
         self.navigationItem.title = ""
@@ -54,6 +59,7 @@ class TabBarViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.setupView()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -105,6 +111,16 @@ extension TabBarViewController {
             history.tabBarItem = self.createBarItem(with: .history)
             tab.append(history)
         }
+        
+        if let setting = SettingsRouter.createSettingsViewController() as? SettingsTableViewController {
+            setting.parentVC = self
+            setting.tabBarItem = self.createBarItem(with: .setting)
+            tab.append(setting)
+        }
+        
+//        if let setting = SettingsRouter.createSettingsViewController() {
+//            tab.append(setting)
+//        }
         
         return tab
     }

@@ -19,15 +19,15 @@ enum AboutUsCellType: CaseIterable {
     var string: String {
         switch self {
         case .header:
-            return LocalizationHelper.shared.localized(Localizations.STORE_NAME)
+            return LocalizationHelper.shared.localized(LocalizationKeys.STORE_NAME)
         case .taoden:
-            return LocalizationHelper.shared.localized(Localizations.TITLE_ACTION_SCAN)
+            return LocalizationHelper.shared.localized(LocalizationKeys.CONTACT_TAODEN)
         case .phoneNumber1:
-            return LocalizationHelper.shared.localized(Localizations.CONTACT_PHONE_NUMBER1)
+            return LocalizationHelper.shared.localized(LocalizationKeys.CONTACT_PHONE_NUMBER1)
         case .phoneNumber2:
-            return LocalizationHelper.shared.localized(Localizations.CONTACT_PHONE_NUMBER2)
+            return LocalizationHelper.shared.localized(LocalizationKeys.CONTACT_PHONE_NUMBER2)
         case .footer:
-            return LocalizationHelper.shared.localized(Localizations.CONTACT_FOOTER)
+            return LocalizationHelper.shared.localized(LocalizationKeys.CONTACT_FOOTER)
         }
     }
     

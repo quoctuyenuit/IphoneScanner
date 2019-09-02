@@ -9,11 +9,23 @@
 import Foundation
 import UIKit
 
-protocol SettingsViewProtocol {
+protocol SettingsViewProtocol: class {
+    var presenter: SettingsPresenterProtocol? { get set }
+}
+
+protocol SettingsPresenterProtocol: class {
+    var view: SettingsViewProtocol? { get set }
+    var router: SettingsRouterProtocol? { get set }
     
+    func createSetLanguageViewController() -> UIViewController?
+    func setLanguage(for language: Languages)
+    func getCurrentLanguage() -> Languages
+    func getAllLanguages() -> [Languages]
 }
 
 protocol SettingsRouterProtocol: class{
     static func mainStoryboard() -> UIStoryboard
     static func createSettingsViewController() -> UIViewController?
+    
+    func createSetLanguageViewController() -> UIViewController?
 }

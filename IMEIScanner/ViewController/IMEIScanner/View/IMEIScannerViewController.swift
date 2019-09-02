@@ -60,7 +60,7 @@ class IMEIScannerViewController: UIViewController, IMEIScannerViewProtocol {
     private lazy var btnScanIMEI: UIButton = {
         let btn = UIButton()
         btn.shadowAndRadius(cornerRadius: 5, shadowRadius: 3)
-        btn.setTitle(LocalizationHelper.shared.localized(.BUTTON_CHECK_IMEI), for: UIControl.State.normal)
+        btn.setTitle(LocalizationHelper.shared.localized(.BUTTON_SCAN_IMEI), for: UIControl.State.normal)
         btn.setTitleColor(UIColor.whiteTwo, for: UIControl.State.normal)
         btn.backgroundColor = UIColor.appBase
         btn.addTarget(self, action: #selector(scanIMEIAction(_:)), for: .touchUpInside)
@@ -68,14 +68,14 @@ class IMEIScannerViewController: UIViewController, IMEIScannerViewProtocol {
     }()
     
     struct Constants {
-        static var BUTTON_HEIGHT = UIScreen.main.scale == 3 ? 55 : 40
+        static var BUTTON_HEIGHT = UIScreen.main.scale == 3 ? 40 : 35
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
         self.boxService?.delegate = self
-        self.navigationItem.title = LocalizationHelper.shared.localized(Localizations.TITLE_MANUALLY_SCAN)
+        self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_MANUALLY_SCAN)
     }
 
     private func setupView() {
@@ -179,11 +179,11 @@ extension IMEIScannerViewController {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         
-        let alertController = UIAlertController(title: "Chọn nguồn ảnh", message: nil, preferredStyle: .actionSheet)
-        let cancelAction = UIAlertAction(title: "Huỷ", style: .cancel, handler: nil)
+        let alertController = UIAlertController(title: LocalizationHelper.shared.localized(.SCAN_CHOOSE_IMAGE), message: nil, preferredStyle: .actionSheet)
+        let cancelAction = UIAlertAction(title: LocalizationHelper.shared.localized(.SCAN_CANCEL), style: .cancel, handler: nil)
         
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-            let photoLibraryAction = UIAlertAction(title: "Thư viện ảnh", style: .default) { (action) in
+            let photoLibraryAction = UIAlertAction(title: LocalizationHelper.shared.localized(.SCAN_LIBRARY), style: .default) { (action) in
                 imagePicker.sourceType = .photoLibrary
                 self.present(imagePicker, animated: true, completion: nil)
             }
@@ -191,7 +191,7 @@ extension IMEIScannerViewController {
         }
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let cameraAction = UIAlertAction(title: "Máy ảnh", style: .default) { (action) in
+            let cameraAction = UIAlertAction(title: LocalizationHelper.shared.localized(.SCAN_CAMERA), style: .default) { (action) in
                 imagePicker.sourceType = .camera
                 self.present(imagePicker, animated: true, completion: nil)
             }

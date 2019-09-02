@@ -15,7 +15,7 @@ class ShowResultsViewController: UIViewController, ShowResultsViewProtocol {
     private var copyAllBtn: UIButton = {
         let btn = UIButton()
         btn.shadowAndRadius()
-        btn.setTitle("Sao chép tất cả", for: UIControl.State.normal)
+        btn.setTitle(LocalizationHelper.shared.localized(.BUTTON_COPY_ALL), for: UIControl.State.normal)
         btn.setTitleColor(UIColor.white, for: UIControl.State.normal)
         btn.setTitleColor(UIColor.lightGray, for: UIControl.State.highlighted)
         btn.backgroundColor = UIColor.appBase
@@ -26,7 +26,7 @@ class ShowResultsViewController: UIViewController, ShowResultsViewProtocol {
     private var checkImeiBtn: UIButton = {
         let btn = UIButton()
         btn.shadowAndRadius()
-        btn.setTitle("Kiểm tra IMEI", for: UIControl.State.normal)
+        btn.setTitle(LocalizationHelper.shared.localized(.BUTTON_CHECK_IMEI), for: UIControl.State.normal)
         btn.setTitleColor(UIColor.white, for: UIControl.State.normal)
         btn.setTitleColor(UIColor.lightGray, for: UIControl.State.highlighted)
         btn.backgroundColor = UIColor.appBase

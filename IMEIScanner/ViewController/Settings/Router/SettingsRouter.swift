@@ -15,7 +15,31 @@ class SettingsRouter: SettingsRouterProtocol {
     }
     
     static func createSettingsViewController() -> UIViewController? {
-        let viewController = mainStoryboard().instantiateInitialViewController()
-        return viewController
+        guard let view = mainStoryboard().instantiateInitialViewController() as? SettingsViewProtocol & UIViewController else {
+            return UIViewController()
+        }
+        
+        let presenter: SettingsPresenterProtocol = SettingsPresenter()
+        let router: SettingsRouterProtocol = SettingsRouter()
+        
+        view.presenter = presenter
+        presenter.router = router
+        
+        return view
+//        return UINavigationController(rootViewController: view)
+    }
+    
+    func createSetLanguageViewController() -> UIViewController? {
+        guard let view = UIStoryboard(name: "SetLanguage", bundle: nil).instantiateInitialViewController() as? SettingsViewProtocol & UIViewController else {
+            return UIViewController()
+        }
+        
+        let presenter: SettingsPresenterProtocol = SettingsPresenter()
+        let router: SettingsRouterProtocol = SettingsRouter()
+        
+        view.presenter = presenter
+        presenter.router = router
+        
+        return view
     }
 }

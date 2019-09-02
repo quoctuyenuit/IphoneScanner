@@ -18,19 +18,9 @@ class HomeViewController: UIViewController, HomeViewProtocol {
     
     //MARK: - Constant variable
     
-    private lazy var items: [HomeCellModel] = {
-        var items = [HomeCellModel]()
-        items = [
-            HomeCellModel(identify: .manually, title: LocalizationHelper.shared.localized(Localizations.HOME_MANUALLY_SCAN)),
-            HomeCellModel(identify: .automaticlly, title: LocalizationHelper.shared.localized(Localizations.HOME_AUTOMATIC_SCAN)),
-            HomeCellModel(identify: .aboutUs, title: LocalizationHelper.shared.localized(Localizations.HOME_CONTACT)),
-            HomeCellModel(identify: .guideLine, title: LocalizationHelper.shared.localized(Localizations.HOME_GUIDE)),
-            HomeCellModel(identify: .unlockIphone, title: LocalizationHelper.shared.localized(Localizations.HOME_UNLOCK_IPHONE)),
-            HomeCellModel(identify: .checkImei, title: LocalizationHelper.shared.localized(Localizations.HOME_CHECK_IMEI)),
-            HomeCellModel(identify: .settings, title: LocalizationHelper.shared.localized(Localizations.HOME_SETTINGS)),
-        ]
-        return items
-    }()
+    private var items: [HomeCellModel] {
+        return self.presenter?.getItems() ?? []
+    }
     private var cellSize: CGSize {
         let width: CGFloat = UIScreen.main.bounds.width / 2
         return CGSize(width: width, height: width)
@@ -57,7 +47,12 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         super.viewDidLoad()
         self.setupView()
         self.collectionView.indicatorStyle = .white
-        self.title = LocalizationHelper.shared.localized(Localizations.TITLE_HOME)
+        self.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_HOME)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.collectionView.reloadData()
     }
     
     private func setupView() {
@@ -72,10 +67,6 @@ class HomeViewController: UIViewController, HomeViewProtocol {
             make.left.bottom.right.equalToSuperview()
             make.top.equalToSuperview()
         }
-    }
-    
-    func configure(items: [HomeCellModel]) {
-        self.items = items
     }
 }
 

@@ -11,7 +11,7 @@ import Foundation
 class Preferences {
     
     private static let kCurrentLocale = "CurrentLocale"
-    private static let kDefaultLocale = LangVie
+    private static let kDefaultLocale = Languages.en.rawValue
     
     static let shared = Preferences()
     
@@ -22,10 +22,8 @@ class Preferences {
         return Preferences.kDefaultLocale
     }
     
-    func setCurrentLocale(_ locale: String) {
-        UserDefaults.standard.set(locale, forKey: Preferences.kCurrentLocale)
+    func setCurrentLocale(_ locale: Languages) {
+        UserDefaults.standard.set(locale.rawValue, forKey: Preferences.kCurrentLocale)
         UserDefaults.standard.synchronize()
     }
-    
 }
-

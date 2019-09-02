@@ -29,23 +29,26 @@ class GuideLineViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = LocalizationHelper.shared.localized(Localizations.TITLE_GUIDE)
+        self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_GUIDE)
+        self.updateLocale()
         // Do any additional setup after loading the view.
     }
     
     private func updateLocale() {
-        self.labelTitle.text = LocalizationHelper.shared.localized(Localizations.GUIDE_TITLE)
-        self.labelSubtitle1.text = LocalizationHelper.shared.localized(Localizations.GUIDE_SUBTITLE1)
-        self.labelSubtitle2.text = LocalizationHelper.shared.localized(Localizations.GUIDE_SUBTITLE2)
-        self.labelSubtitle3.text = LocalizationHelper.shared.localized(Localizations.GUIDE_SUBTITLE3)
-        self.labelSubtitle4.text = LocalizationHelper.shared.localized(Localizations.GUIDE_SUBTITLE4)
+        self.labelTitle.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_TITLE)
+        self.labelSubtitle1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_SUBTITLE1)
+        self.labelSubtitle2.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_SUBTITLE2)
+        self.labelSubtitle3.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_SUBTITLE3)
+        self.labelSubtitle4.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_SUBTITLE4)
         
-        self.guideContent1_1.text = LocalizationHelper.shared.localized(Localizations.GUIDE_CONTENT1_1)
-        self.guideContent1_2.text = LocalizationHelper.shared.localized(Localizations.GUIDE_CONTENT1_2)
-        self.guideContent1_3.text = LocalizationHelper.shared.localized(Localizations.GUIDE_CONTENT1_3)
+        self.guideContent1_1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT1_1)
+        self.guideContent1_2.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT1_2)
+        self.guideContent1_3.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT1_3)
         
-        self.guideContent2_1.text = LocalizationHelper.shared.localized(Localizations.GUIDE_CONTENT2_1)
+        self.guideContent2_1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT2_1)
         
-        self.guideContent3_1.text = LocalizationHelper.shared.localized(Localizations.GUIDE_CONTENT3_1)
+        self.guideContent3_1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT3_1)
+        
+        self.guideContent4_1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT4_1)
     }
 }

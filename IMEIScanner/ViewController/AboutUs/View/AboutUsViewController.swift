@@ -29,7 +29,7 @@ class AboutUsViewController: UIViewController, AboutUsViewProtocol {
         super.viewDidLoad()
         self._listItems = self.presenter?.getListItems() ?? []
         self.setupView()
-        self.navigationItem.title = LocalizationHelper.shared.localized(Localizations.TITLE_CONTACT)
+        self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_CONTACT)
     }
     
     private func setupView() {

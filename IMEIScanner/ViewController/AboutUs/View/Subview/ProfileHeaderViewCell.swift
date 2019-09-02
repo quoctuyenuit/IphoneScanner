@@ -12,16 +12,16 @@ import SnapKit
 class ProfileHeaderViewCell: UITableViewCell {
     
     public static let REUSE_IDENTIFIER = "ProfileHeaderViewCell"
-    private let avatarSize: CGFloat = 100
+    private let avatarSize: CGFloat = 80
     private lazy var _avatar: UIImageView = {
         let imageView = UIImageView()
-        imageView.layer.cornerRadius = avatarSize / 2
-        imageView.backgroundColor = .white
-        imageView.clearsContextBeforeDrawing = true
-        imageView.layer.borderWidth = 2
-        imageView.layer.masksToBounds = false
-        imageView.layer.borderColor = UIColor.whiteTwo.cgColor
-        imageView.clipsToBounds = true
+//        imageView.layer.cornerRadius = avatarSize / 2
+//        imageView.backgroundColor = .white
+//        imageView.clearsContextBeforeDrawing = true
+//        imageView.layer.borderWidth = 2
+//        imageView.layer.masksToBounds = false
+//        imageView.layer.borderColor = UIColor.whiteTwo.cgColor
+//        imageView.clipsToBounds = true
         imageView.image = UIImage(named: "default_avatar")
         return imageView
     }()
@@ -88,7 +88,7 @@ class ProfileHeaderViewCell: UITableViewCell {
         }
         
         self._moreContentView.snp.makeConstraints { (make) in
-            make.left.equalTo(self._avatar.snp.right).offset(10)
+            make.left.equalTo(self._avatar.snp.right).offset(15)
             make.right.equalToSuperview()
             make.height.greaterThanOrEqualTo(0)
             make.centerY.equalToSuperview()

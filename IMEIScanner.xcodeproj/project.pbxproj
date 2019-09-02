@@ -22,9 +22,7 @@
 		3D02311F230C4D9400A13216 /* SettingsGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D02311E230C4D9400A13216 /* SettingsGlobal.swift */; };
 		3D023122230C516800A13216 /* IMEIScannerVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D023121230C516800A13216 /* IMEIScannerVideoController.swift */; };
 		3D2E8A902319852E007FF3DD /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E8A8F2319852E007FF3DD /* HistoryDetailViewController.swift */; };
-		3D49A0DB231C2E3E0041DFD8 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49A0DA231C2E3E0041DFD8 /* Preferences.swift */; };
 		3D49A0DD231C2F570041DFD8 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49A0DC231C2F570041DFD8 /* LocalizationHelper.swift */; };
-		3D49A0E1231C36110041DFD8 /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49A0E0231C36110041DFD8 /* Localizations.swift */; };
 		3D4B4404231030CF00DAC9CF /* ResultBoardStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4B4403231030CF00DAC9CF /* ResultBoardStoryboard.storyboard */; };
 		3D4B4406231044FD00DAC9CF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B4405231044FD00DAC9CF /* HistoryTableViewCell.swift */; };
 		3D4B440823104DF000DAC9CF /* GuideLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B440723104DF000DAC9CF /* GuideLineViewController.swift */; };
@@ -64,6 +62,10 @@
 		3D97ED1222FB2F9000AF2793 /* ShowResultsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D97ED1122FB2F9000AF2793 /* ShowResultsRouter.swift */; };
 		3D97ED1422FB308100AF2793 /* IMEIResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D97ED1322FB308100AF2793 /* IMEIResultCard.swift */; };
 		3D97ED1622FB339D00AF2793 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D97ED1522FB339D00AF2793 /* View+Extension.swift */; };
+		3DBB7A09231CBC0E00C53BBA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB7A07231CBC0E00C53BBA /* Localizable.strings */; };
+		3DBB7A0E231CC31300C53BBA /* LocalizationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB7A0D231CC31300C53BBA /* LocalizationKeys.swift */; };
+		3DBB7A13231CCDCF00C53BBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB7A11231CCDCF00C53BBA /* InfoPlist.strings */; };
+		3DBB7A18231CDB3600C53BBA /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB7A17231CDB3600C53BBA /* Preferences.swift */; };
 		3DF7C27522FF180300A7DE99 /* NotificationPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7C27422FF180300A7DE99 /* NotificationPopup.swift */; };
 		3DF99EE222F862DD00FB804F /* VisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF99EE122F862DD00FB804F /* VisionService.swift */; };
 		3DF99EE422F866DD00FB804F /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF99EE322F866DD00FB804F /* BoxService.swift */; };
@@ -71,6 +73,9 @@
 		3DF99EF222F87E9900FB804F /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF99EF122F87E9900FB804F /* Image+Extensions.swift */; };
 		3DF9F0C2231ABE4700F2F314 /* IMEI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0C1231ABE4700F2F314 /* IMEI.swift */; };
 		3DF9F0C7231AC3B200F2F314 /* AppNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0C6231AC3B200F2F314 /* AppNotify.swift */; };
+		3DFD6408231D1C1B0000773F /* SetLanguage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFD6407231D1C1B0000773F /* SetLanguage.storyboard */; };
+		3DFD640A231D1D0E0000773F /* SetLanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD6409231D1D0E0000773F /* SetLanguageTableViewController.swift */; };
+		3DFD640D231D1DD80000773F /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD640C231D1DD80000773F /* SettingsPresenter.swift */; };
 		7D5F67ADD96959330C55EA87 /* Pods_IMEIScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5997793B28D229C8C319E74 /* Pods_IMEIScanner.framework */; };
 		AA1D1BCDD8F48B18B62ADEC8 /* Pods_IMEIScannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3360EDF3EAF9F0F7E94A07 /* Pods_IMEIScannerTests.framework */; };
 		C89A9FB24D4760BB5EA1BF85 /* Pods_IMEIScannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430A9F18E2BC4770AEC9CFE6 /* Pods_IMEIScannerUITests.framework */; };
@@ -111,9 +116,7 @@
 		3D02311E230C4D9400A13216 /* SettingsGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGlobal.swift; sourceTree = "<group>"; };
 		3D023121230C516800A13216 /* IMEIScannerVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMEIScannerVideoController.swift; sourceTree = "<group>"; };
 		3D2E8A8F2319852E007FF3DD /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
-		3D49A0DA231C2E3E0041DFD8 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		3D49A0DC231C2F570041DFD8 /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
-		3D49A0E0231C36110041DFD8 /* Localizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
 		3D4B4403231030CF00DAC9CF /* ResultBoardStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultBoardStoryboard.storyboard; sourceTree = "<group>"; };
 		3D4B4405231044FD00DAC9CF /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		3D4B440723104DF000DAC9CF /* GuideLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideLineViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +163,16 @@
 		3D97ED1122FB2F9000AF2793 /* ShowResultsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowResultsRouter.swift; sourceTree = "<group>"; };
 		3D97ED1322FB308100AF2793 /* IMEIResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMEIResultCard.swift; sourceTree = "<group>"; };
 		3D97ED1522FB339D00AF2793 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		3DBB7A03231CBBB400C53BBA /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		3DBB7A04231CBBB400C53BBA /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3DBB7A08231CBC0E00C53BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DBB7A0B231CBC1A00C53BBA /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DBB7A0D231CC31300C53BBA /* LocalizationKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationKeys.swift; sourceTree = "<group>"; };
+		3DBB7A12231CCDCF00C53BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DBB7A14231CCEAD00C53BBA /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DBB7A15231CD0EE00C53BBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DBB7A16231CD0FA00C53BBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DBB7A17231CDB3600C53BBA /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		3DF7C27422FF180300A7DE99 /* NotificationPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPopup.swift; sourceTree = "<group>"; };
 		3DF99EE122F862DD00FB804F /* VisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionService.swift; sourceTree = "<group>"; };
 		3DF99EE322F866DD00FB804F /* BoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
@@ -167,6 +180,9 @@
 		3DF99EF122F87E9900FB804F /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		3DF9F0C1231ABE4700F2F314 /* IMEI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMEI.swift; sourceTree = "<group>"; };
 		3DF9F0C6231AC3B200F2F314 /* AppNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotify.swift; sourceTree = "<group>"; };
+		3DFD6407231D1C1B0000773F /* SetLanguage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetLanguage.storyboard; sourceTree = "<group>"; };
+		3DFD6409231D1D0E0000773F /* SetLanguageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLanguageTableViewController.swift; sourceTree = "<group>"; };
+		3DFD640C231D1DD80000773F /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		430A9F18E2BC4770AEC9CFE6 /* Pods_IMEIScannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEIScannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3360EDF3EAF9F0F7E94A07 /* Pods_IMEIScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEIScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA896A394812A09C4279C11B /* Pods-IMEIScannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEIScannerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMEIScannerUITests/Pods-IMEIScannerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -303,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				3D02311D230C492A00A13216 /* Protocol */,
+				3DFD640B231D1D570000773F /* Presenter */,
 				3D023113230C45A200A13216 /* Router */,
 				3D023112230C459400A13216 /* View */,
 			);
@@ -312,6 +329,7 @@
 		3D023112230C459400A13216 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3DFD6406231D1C060000773F /* Subview */,
 				3D023114230C45CB00A13216 /* SettingsView.storyboard */,
 				3D023116230C471B00A13216 /* SettingsTableViewController.swift */,
 			);
@@ -357,7 +375,7 @@
 		3D49A0D0231C2C7C0041DFD8 /* Languages */ = {
 			isa = PBXGroup;
 			children = (
-				3D49A0E0231C36110041DFD8 /* Localizations.swift */,
+				3DBB7A0D231CC31300C53BBA /* LocalizationKeys.swift */,
 			);
 			path = Languages;
 			sourceTree = "<group>";
@@ -535,10 +553,10 @@
 		3D8E193922F72CC300AD4E7E /* IMEIScanner */ = {
 			isa = PBXGroup;
 			children = (
-				3D49A0D0231C2C7C0041DFD8 /* Languages */,
 				3D6B311C2305B6200071E78D /* IMEIScanner.entitlements */,
 				3D8E197022F7300700AD4E7E /* AppDelegates */,
 				3DF99EEC22F8749D00FB804F /* Extensions */,
+				3D49A0D0231C2C7C0041DFD8 /* Languages */,
 				3DF99EE722F86C7900FB804F /* Services */,
 				3D023110230C438800A13216 /* ViewController */,
 				3D8E193E22F72CC300AD4E7E /* Main.storyboard */,
@@ -546,6 +564,8 @@
 				3D8E194122F72CC400AD4E7E /* Assets.xcassets */,
 				3D8E194322F72CC400AD4E7E /* LaunchScreen.storyboard */,
 				3D8E194622F72CC400AD4E7E /* Info.plist */,
+				3DBB7A07231CBC0E00C53BBA /* Localizable.strings */,
+				3DBB7A11231CCDCF00C53BBA /* InfoPlist.strings */,
 			);
 			path = IMEIScanner;
 			sourceTree = "<group>";
@@ -687,9 +707,9 @@
 		3DF99EE722F86C7900FB804F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3DBB7A17231CDB3600C53BBA /* Preferences.swift */,
 				3DF99EE122F862DD00FB804F /* VisionService.swift */,
 				3DF99EE322F866DD00FB804F /* BoxService.swift */,
-				3D49A0DA231C2E3E0041DFD8 /* Preferences.swift */,
 				3D49A0DC231C2F570041DFD8 /* LocalizationHelper.swift */,
 			);
 			path = Services;
@@ -713,6 +733,23 @@
 				3DF9F0C1231ABE4700F2F314 /* IMEI.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		3DFD6406231D1C060000773F /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				3DFD6407231D1C1B0000773F /* SetLanguage.storyboard */,
+				3DFD6409231D1D0E0000773F /* SetLanguageTableViewController.swift */,
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
+		3DFD640B231D1D570000773F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3DFD640C231D1DD80000773F /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		B6FEF39012CBA91458EF2377 /* Frameworks */ = {
@@ -837,7 +874,7 @@
 			knownRegions = (
 				en,
 				Base,
-				a,
+				vi,
 			);
 			mainGroup = 3D8E192E22F72CC300AD4E7E;
 			productRefGroup = 3D8E193822F72CC300AD4E7E /* Products */;
@@ -860,10 +897,13 @@
 				3D023115230C45CB00A13216 /* SettingsView.storyboard in Resources */,
 				3D8C8BE822F9C13100926A66 /* GoogleService-Info.plist in Resources */,
 				3D6CDA30230ED636008AADEA /* GuideLine.storyboard in Resources */,
+				3DBB7A09231CBC0E00C53BBA /* Localizable.strings in Resources */,
+				3DFD6408231D1C1B0000773F /* SetLanguage.storyboard in Resources */,
 				3D8E194222F72CC400AD4E7E /* Assets.xcassets in Resources */,
 				3D8E194022F72CC300AD4E7E /* Main.storyboard in Resources */,
 				3D4B4404231030CF00DAC9CF /* ResultBoardStoryboard.storyboard in Resources */,
 				3D6CDA3B230ED875008AADEA /* HistoryStoryboard.storyboard in Resources */,
+				3DBB7A13231CCDCF00C53BBA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,6 +1083,7 @@
 				3D6CDA41230EDFAC008AADEA /* HistoryTableViewController.swift in Sources */,
 				3D023107230C3B7B00A13216 /* HomeInteractor.swift in Sources */,
 				3D6CDA33230ED82E008AADEA /* GuideLineRouter.swift in Sources */,
+				3DBB7A0E231CC31300C53BBA /* LocalizationKeys.swift in Sources */,
 				3D8E193D22F72CC300AD4E7E /* IMEIScannerViewController.swift in Sources */,
 				3D023117230C471B00A13216 /* SettingsTableViewController.swift in Sources */,
 				3D2E8A902319852E007FF3DD /* HistoryDetailViewController.swift in Sources */,
@@ -1051,6 +1092,7 @@
 				3D97ED1222FB2F9000AF2793 /* ShowResultsRouter.swift in Sources */,
 				3D73DE31230D939500369906 /* ProfileCellModel.swift in Sources */,
 				3D6CDA3D230EDBC9008AADEA /* HistoryRouter.swift in Sources */,
+				3DFD640D231D1DD80000773F /* SettingsPresenter.swift in Sources */,
 				3DF99EE222F862DD00FB804F /* VisionService.swift in Sources */,
 				3D02311F230C4D9400A13216 /* SettingsGlobal.swift in Sources */,
 				3D73DE37230D939500369906 /* AboutUsInteractor.swift in Sources */,
@@ -1068,13 +1110,13 @@
 				3D023109230C3B8B00A13216 /* HomeRouter.swift in Sources */,
 				3D023103230C3B1500A13216 /* HomeProtocol.swift in Sources */,
 				3D49A0DD231C2F570041DFD8 /* LocalizationHelper.swift in Sources */,
-				3D49A0DB231C2E3E0041DFD8 /* Preferences.swift in Sources */,
-				3D49A0E1231C36110041DFD8 /* Localizations.swift in Sources */,
+				3DBB7A18231CDB3600C53BBA /* Preferences.swift in Sources */,
 				3D97ED1422FB308100AF2793 /* IMEIResultCard.swift in Sources */,
 				3D73DE35230D939500369906 /* ProfileHeaderViewCell.swift in Sources */,
 				3D97ED1022FB2F7C00AF2793 /* ShowResultsInteractor.swift in Sources */,
 				3DF7C27522FF180300A7DE99 /* NotificationPopup.swift in Sources */,
 				3DF9F0C2231ABE4700F2F314 /* IMEI.swift in Sources */,
+				3DFD640A231D1D0E0000773F /* SetLanguageTableViewController.swift in Sources */,
 				3D73DE36230D939500369906 /* AboutUsViewController.swift in Sources */,
 				3D4B440823104DF000DAC9CF /* GuideLineViewController.swift in Sources */,
 				3D97ED1622FB339D00AF2793 /* View+Extension.swift in Sources */,
@@ -1118,6 +1160,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3D8E193F22F72CC300AD4E7E /* Base */,
+				3DBB7A03231CBBB400C53BBA /* vi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1126,8 +1169,29 @@
 			isa = PBXVariantGroup;
 			children = (
 				3D8E194422F72CC400AD4E7E /* Base */,
+				3DBB7A04231CBBB400C53BBA /* vi */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3DBB7A07231CBC0E00C53BBA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBB7A08231CBC0E00C53BBA /* Base */,
+				3DBB7A0B231CBC1A00C53BBA /* vi */,
+				3DBB7A16231CD0FA00C53BBA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3DBB7A11231CCDCF00C53BBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBB7A12231CCDCF00C53BBA /* Base */,
+				3DBB7A14231CCEAD00C53BBA /* vi */,
+				3DBB7A15231CD0EE00C53BBA /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1137,6 +1201,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1198,6 +1263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

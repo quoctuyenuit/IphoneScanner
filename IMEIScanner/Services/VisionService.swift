@@ -32,6 +32,8 @@ final class VisionService: VisionServiceProtocol {
             return CGImagePropertyOrientation.right
         case .rightMirrored:
             return CGImagePropertyOrientation.rightMirrored
+        @unknown default:
+            return CGImagePropertyOrientation.up
         }
     }
     

@@ -16,10 +16,10 @@ final class AppNotify {
     }
     
     static func copySuccessful(from vc: UIViewController) {
-        show(for: LocalizationHelper.shared.localized(Localizations.NOTI_COPY_SUCCESS_MSG), from: vc)
+        show(for: LocalizationHelper.shared.localized(LocalizationKeys.NOTI_COPY_SUCCESS_MSG), from: vc)
     }
     
     static func scanFail(from vc: UIViewController) {
-        show(for: LocalizationHelper.shared.localized(Localizations.NOTI_SCAN_FAILT), from: vc)
+        show(for: LocalizationHelper.shared.localized(LocalizationKeys.NOTI_SCAN_FAILT), from: vc)
     }
 }

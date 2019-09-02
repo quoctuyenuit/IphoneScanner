@@ -18,10 +18,7 @@ protocol HomePresenterProtocol {
     var interactor: HomeInteractorProtocol? { get set }
     var router: HomeRouterProtocol? { get set }
     
-//    //View -> Presenter
-//    func showQRScanner()
-//    func showNotification(from viewController: UIViewController?, listNotification: [NotificationProtocol])
-//    func getNotification(completion: @escaping (NotificationProtocol) -> ())
+    func getItems() -> [HomeCellModel]
 }
 protocol HomeInteractorProtocol {
 //    func getNotification() -> Observable<NotificationProtocol>

@@ -28,7 +28,7 @@ class HistoryTableViewController: UITableViewController, HistoryViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = LocalizationHelper.shared.localized(Localizations.TITLE_HISTORY)
+        self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_HISTORY)
         self.searchBar.delegate = self
         self.searchBar.returnKeyType = .done
         

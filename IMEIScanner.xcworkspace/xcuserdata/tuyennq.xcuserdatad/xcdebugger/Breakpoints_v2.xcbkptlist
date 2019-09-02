@@ -218,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMEIScanner/ViewController/AboutUs/View/AboutUsViewController.swift"
-            timestampString = "589083031.532222"
+            timestampString = "589096491.340054"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -234,28 +234,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMEIScanner/ViewController/IMEIScanner/View/IMEIScannerVideoController.swift"
-            timestampString = "589083031.53265"
+            timestampString = "589096491.340206"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "208"
             endingLineNumber = "208"
             landmarkName = "startLoadingView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IMEIScanner/AppDelegates/AppDelegate.swift"
-            timestampString = "589051809.5211639"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "showMainViewController()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

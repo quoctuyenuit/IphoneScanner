@@ -8,21 +8,14 @@
 
 import Foundation
 
-let LangVie = "vie"
-let LangEn = "en"
 class LocalizationHelper {
     static let shared = LocalizationHelper()
     
-    func localized(_ key: Localizations) -> String {
-        
-        switch Preferences.shared.currentLocale() {
-        case LangVie:
-            return key.vieMsg
-        case LangEn:
-            return key.enMsg
-        default:
-            return ""
-        }
-        
+    func localized(_ key: LocalizationKeys) -> String {
+        return key.rawValue.localized(Preferences.shared.currentLocale())
+    }
+    
+    func localized(_ key: String) -> String {
+        return key.localized(Preferences.shared.currentLocale())
     }
 }
