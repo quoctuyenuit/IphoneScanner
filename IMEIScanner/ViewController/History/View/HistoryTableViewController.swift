@@ -28,12 +28,14 @@ class HistoryTableViewController: UITableViewController, HistoryViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_HISTORY)
         self.searchBar.delegate = self
         self.searchBar.returnKeyType = .done
+        self.setupNavigationController()
         
-//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction(_:)))
-//        self.tableView.addGestureRecognizer(tapGesture)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction(_:)))
+        tapGesture.cancelsTouchesInView = false
+        self.tableView.addGestureRecognizer(tapGesture)
         
         self.searchBar
             .rx.text
@@ -88,6 +90,7 @@ class HistoryTableViewController: UITableViewController, HistoryViewProtocol {
     }
     
     private func reloadHistory() {
+        self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_HISTORY)
         self.searchBar.text = ""
         self.shownItems = items
         self.tableView.reloadData()
@@ -102,8 +105,7 @@ class HistoryTableViewController: UITableViewController, HistoryViewProtocol {
 }
 
 extension HistoryTableViewController: UISearchBarDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }

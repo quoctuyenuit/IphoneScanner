@@ -63,5 +63,16 @@ class SetLanguageTableViewController: UITableViewController, SettingsViewProtoco
         self.presenter?.setLanguage(for: currentLang)
         tableView.deselectRow(at: indexPath, animated: true)
         self.navigationController?.popViewController(animated: true)
+        
+        guard let rootView = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController else {
+            return
+        }
+        
+        if let tabBar = rootView.topViewController as? TabBarViewController {
+//            let selectedIndex = tabBar.tabBarViewController.selectedIndex
+            tabBar.updateLocale()
+//            tabBar.tabBarViewController.selectedIndex = selectedIndex
+        }
+       
     }
 }

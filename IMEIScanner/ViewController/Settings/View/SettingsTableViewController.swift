@@ -22,12 +22,13 @@ class SettingsTableViewController: UITableViewController, SettingsViewProtocol {
         super.viewDidLoad()
         self.isAutoCopy = SettingsGlobal.isAutoCopy
         self.sw_autoCopy.setOn(self.isAutoCopy, animated: false)
+        self.setupNavigationController()
+        self.updateLocale()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tableView.reloadData()
-        self.updateLocale()
     }
 
     // MARK: - Table view data source
@@ -71,10 +72,15 @@ class SettingsTableViewController: UITableViewController, SettingsViewProtocol {
             guard let view = self.presenter?.createSetLanguageViewController() else {
                 return
             }
-            self.parentVC?.navigationController?.pushViewController(view, animated: true)
+            self.navigationController?.pushViewController(view, animated: true)
         default:
             return
         }
+    }
+    
+    override func onUpdateLocale() {
+        super.onUpdateLocale()
+        self.updateLocale()
     }
     
     private func updateLocale() {

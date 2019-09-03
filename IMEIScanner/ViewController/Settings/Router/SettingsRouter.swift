@@ -25,8 +25,8 @@ class SettingsRouter: SettingsRouterProtocol {
         view.presenter = presenter
         presenter.router = router
         
-        return view
-//        return UINavigationController(rootViewController: view)
+//        return view
+        return UINavigationController(rootViewController: view)
     }
     
     func createSetLanguageViewController() -> UIViewController? {

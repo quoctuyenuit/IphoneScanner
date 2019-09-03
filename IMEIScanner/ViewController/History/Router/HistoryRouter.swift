@@ -26,6 +26,6 @@ class HistoryRouter: HistoryRouterProtocol {
         presenter.view = view
         presenter.router = router
         
-        return view
+        return UINavigationController(rootViewController: view)
     }
 }

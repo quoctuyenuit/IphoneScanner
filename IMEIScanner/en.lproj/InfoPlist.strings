@@ -6,3 +6,4 @@
   Copyright © 2019 Nguyễn Quốc Tuyến. All rights reserved.
 */
 "CFBundleDisplayName"="TaoDen";
+"NSCameraUsageDescription"="We need camera access to scan photos containing IMEI.";

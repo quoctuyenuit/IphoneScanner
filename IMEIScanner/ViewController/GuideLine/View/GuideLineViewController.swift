@@ -2,7 +2,7 @@
 //  GuideLineViewController.swift
 //  IMEIScanner
 //
-//  Created by Anh Tuan on 8/23/19.
+//  Created by Quoc Tuyen on 8/23/19.
 //  Copyright © 2019 Nguyễn Quốc Tuyến. All rights reserved.
 //
 
@@ -27,14 +27,24 @@ class GuideLineViewController: UIViewController {
     
     @IBOutlet weak var guideContent4_1: UILabel!
     
+    @IBOutlet weak var imageContent1_1: UIImageView!
+    @IBOutlet weak var imageContent1_2: UIImageView!
+    @IBOutlet weak var imageContent2_1: UIImageView!
+    @IBOutlet weak var imageContent2_2: UIImageView!
+    @IBOutlet weak var imageContent4_1: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_GUIDE)
         self.updateLocale()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func onUpdateLocale() {
+        super.onUpdateLocale()
+        self.updateLocale()
     }
     
     private func updateLocale() {
+        self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_GUIDE)
         self.labelTitle.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_TITLE)
         self.labelSubtitle1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_SUBTITLE1)
         self.labelSubtitle2.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_SUBTITLE2)
@@ -44,11 +54,14 @@ class GuideLineViewController: UIViewController {
         self.guideContent1_1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT1_1)
         self.guideContent1_2.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT1_2)
         self.guideContent1_3.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT1_3)
-        
         self.guideContent2_1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT2_1)
-        
         self.guideContent3_1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT3_1)
-        
         self.guideContent4_1.text = LocalizationHelper.shared.localized(LocalizationKeys.GUIDE_CONTENT4_1)
+        
+        self.imageContent1_1.image = LocalizationHelper.shared.localizedImage(LocalizationKeys.guide_manually_detected)
+        self.imageContent1_2.image = LocalizationHelper.shared.localizedImage(LocalizationKeys.guide_manually)
+        self.imageContent2_1.image = LocalizationHelper.shared.localizedImage(LocalizationKeys.guide_automatic)
+        self.imageContent2_2.image = LocalizationHelper.shared.localizedImage(LocalizationKeys.guide_automatic_detected)
+        self.imageContent4_1.image = LocalizationHelper.shared.localizedImage(LocalizationKeys.guide_settings)
     }
 }

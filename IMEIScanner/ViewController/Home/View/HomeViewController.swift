@@ -14,7 +14,6 @@ private let reuseIdentifier = "Cell"
 
 class HomeViewController: UIViewController, HomeViewProtocol {
     var presenter: HomePresenterProtocol?
-    var parentView: UIViewController?
     
     //MARK: - Constant variable
     
@@ -47,11 +46,20 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         super.viewDidLoad()
         self.setupView()
         self.collectionView.indicatorStyle = .white
-        self.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_HOME)
+        self.setupNavigationController()
+        self.updateLocale()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func onUpdateLocale() {
+        super.onUpdateLocale()
+        self.updateLocale()
+    }
+    
+    private func updateLocale() {
+        self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_HOME)
+        let backButton = UIBarButtonItem()
+        backButton.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_HOME)
+        self.navigationItem.backBarButtonItem = backButton
         self.collectionView.reloadData()
     }
     
@@ -77,19 +85,19 @@ extension HomeViewController: UICollectionViewDelegate {
         switch item.identify {
         case .manually:
             let scannerViewController = IMEIScannerRouter.createIMEIScannerView()
-            self.parentView?.navigationController?.pushViewController(scannerViewController, animated: true)
+            self.navigationController?.pushViewController(scannerViewController, animated: true)
         case .automaticlly:
             let view = IMEIScannerRouter.createIMEIScannerVideo()
-            self.parentView?.navigationController?.pushViewController(view, animated: true)
+            self.navigationController?.pushViewController(view, animated: true)
         case .settings:
             let settingsView = SettingsRouter.createSettingsViewController()
-            self.parentView?.navigationController?.pushViewController(settingsView!, animated: true)
+            self.navigationController?.pushViewController(settingsView!, animated: true)
         case .aboutUs:
             let aboutUsView = AboutUsRouter.createAboutUsViewController()
-            self.parentView?.navigationController?.pushViewController(aboutUsView, animated: true)
+            self.navigationController?.pushViewController(aboutUsView, animated: true)
         case .guideLine:
             let guidelineView = GuideLineRouter.createGuidelineViewController()
-            self.parentView?.navigationController?.pushViewController(guidelineView!, animated: true)
+            self.navigationController?.pushViewController(guidelineView!, animated: true)
         case .unlockIphone:
             guard let url = URL(string: "https://taoden.vn/") else {
                 return

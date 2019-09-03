@@ -43,27 +43,26 @@ class TabBarViewController: UIViewController {
         return self.configure()
     }
     
-    private var tabBarViewController: UITabBarController!
+    var tabBarViewController: UITabBarController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .green
-//        self.setupView()
-        self.navigationController?.navigationBar.tintColor = .white
-        self.navigationController?.navigationBar.barTintColor = .appBase
-        self.navigationItem.title = ""
-        self.navigationController?.navigationBar.isTranslucent = false
-        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-        self.navigationController?.navigationBar.titleTextAttributes = textAttributes
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         self.setupView()
+        self.navigationController?.isNavigationBarHidden = true
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    func updateLocale() {
+        let home = self.tabBarViewController.viewControllers?[0]
+        let history = self.tabBarViewController.viewControllers?[1]
+        let setting = self.tabBarViewController.viewControllers?[2]
+        
+        home?.tabBarItem.title = BarType.home.name
+        history?.tabBarItem.title = BarType.history.name
+        setting?.tabBarItem.title = BarType.setting.name
+        
+        home?.onUpdateLocale()
+        history?.onUpdateLocale()
+        setting?.onUpdateLocale()
     }
     
     private func setupView() {
@@ -100,27 +99,19 @@ extension TabBarViewController {
     
     func configure() -> [UIViewController] {
         var tab:[UIViewController] = []
-        if let home = HomeRouter.createHomeViewController() as? HomeViewController {
-            home.parentView = self
-            home.tabBarItem = self.createBarItem(with: .home)
-            tab.append(home)
-        }
+        let home = HomeRouter.createHomeViewController()
+        home.tabBarItem = self.createBarItem(with: .home)
+        tab.append(home)
+            
         
-        if let history = HistoryRouter.createHistoryViewController() as? HistoryTableViewController {
-            history.parentVC = self
-            history.tabBarItem = self.createBarItem(with: .history)
-            tab.append(history)
-        }
+        let history = HistoryRouter.createHistoryViewController()
+        history.tabBarItem = self.createBarItem(with: .history)
+        tab.append(history)
         
-        if let setting = SettingsRouter.createSettingsViewController() as? SettingsTableViewController {
-            setting.parentVC = self
+        if let setting = SettingsRouter.createSettingsViewController() {
             setting.tabBarItem = self.createBarItem(with: .setting)
             tab.append(setting)
         }
-        
-//        if let setting = SettingsRouter.createSettingsViewController() {
-//            tab.append(setting)
-//        }
         
         return tab
     }

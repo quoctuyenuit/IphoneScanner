@@ -6,3 +6,4 @@
   Copyright © 2019 Nguyễn Quốc Tuyến. All rights reserved.
 */
 "CFBundleDisplayName"="TaoDen";
+"NSCameraUsageDescription"="Chúng tôi cần truy cập máy ảnh để quét ảnh chứa IMEI.";

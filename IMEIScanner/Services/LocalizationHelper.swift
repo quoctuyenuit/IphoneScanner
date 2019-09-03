@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class LocalizationHelper {
     static let shared = LocalizationHelper()
@@ -17,5 +18,10 @@ class LocalizationHelper {
     
     func localized(_ key: String) -> String {
         return key.localized(Preferences.shared.currentLocale())
+    }
+    
+    func localizedImage(_ key: LocalizationKeys) -> UIImage? {
+        let name = key.rawValue.localized(Preferences.shared.currentLocale())
+        return UIImage(named: name)
     }
 }

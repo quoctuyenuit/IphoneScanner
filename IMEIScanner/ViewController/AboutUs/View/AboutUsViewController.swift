@@ -13,7 +13,9 @@ class AboutUsViewController: UIViewController, AboutUsViewProtocol {
     var presenter: AboutUsPresenterProtocol?
     var parentView: UIViewController?
     
-    private var _listItems = [ProfileCellModel]()
+    private var _listItems: [ProfileCellModel] {
+        return self.presenter?.getListItems() ?? []
+    }
     
     private lazy var tableView: UITableView = {
         let table = UITableView()
@@ -27,9 +29,18 @@ class AboutUsViewController: UIViewController, AboutUsViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self._listItems = self.presenter?.getListItems() ?? []
         self.setupView()
+        self.updateLocale()
+    }
+    
+    override func onUpdateLocale() {
+        super.onUpdateLocale()
+        self.updateLocale()
+    }
+    
+    private func updateLocale() {
         self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_CONTACT)
+        self.tableView.reloadData()
     }
     
     private func setupView() {

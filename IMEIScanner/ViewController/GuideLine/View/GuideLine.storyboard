@@ -36,7 +36,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_manually" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-yn-5uR">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_manually_vi" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-yn-5uR">
                                                 <rect key="frame" x="57" y="114.5" width="300" height="400"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="400" id="AzH-O5-tM6"/>
@@ -55,7 +55,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_manually_detected" translatesAutoresizingMaskIntoConstraints="NO" id="KSY-b8-9u1">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_manually_detected_vi" translatesAutoresizingMaskIntoConstraints="NO" id="KSY-b8-9u1">
                                                 <rect key="frame" x="57" y="626" width="300" height="400"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="3lD-ca-bAJ"/>
@@ -74,7 +74,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_automatic" translatesAutoresizingMaskIntoConstraints="NO" id="srn-my-HgG">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_automatic_vi" translatesAutoresizingMaskIntoConstraints="NO" id="srn-my-HgG">
                                                 <rect key="frame" x="57" y="1138" width="300" height="400"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="dSD-y3-76d"/>
@@ -87,7 +87,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_automatic_detected" translatesAutoresizingMaskIntoConstraints="NO" id="g8z-AV-4VQ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_automatic_detected_vi" translatesAutoresizingMaskIntoConstraints="NO" id="g8z-AV-4VQ">
                                                 <rect key="frame" x="57" y="1629" width="300" height="400"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="98D-J0-3lX"/>
@@ -118,7 +118,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_settings" translatesAutoresizingMaskIntoConstraints="NO" id="j6Z-5i-v7I">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_settings_vi" translatesAutoresizingMaskIntoConstraints="NO" id="j6Z-5i-v7I">
                                                 <rect key="frame" x="57" y="2201" width="300" height="400"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="7wQ-V3-Cq2"/>
@@ -209,6 +209,11 @@
                         <outlet property="guideContent2_1" destination="Bpe-d7-bq3" id="eTC-No-heq"/>
                         <outlet property="guideContent3_1" destination="QAB-BY-doo" id="Ho7-BY-d3L"/>
                         <outlet property="guideContent4_1" destination="Az7-3j-1qd" id="uTf-0w-KaW"/>
+                        <outlet property="imageContent1_1" destination="W1T-yn-5uR" id="4B9-ON-JmP"/>
+                        <outlet property="imageContent1_2" destination="KSY-b8-9u1" id="rpm-qS-poj"/>
+                        <outlet property="imageContent2_1" destination="srn-my-HgG" id="pVc-41-5hS"/>
+                        <outlet property="imageContent2_2" destination="g8z-AV-4VQ" id="rEr-Co-OVC"/>
+                        <outlet property="imageContent4_1" destination="j6Z-5i-v7I" id="wlW-i9-QoT"/>
                         <outlet property="labelSubtitle1" destination="kGj-Yf-NsH" id="Kdt-t5-cn7"/>
                         <outlet property="labelSubtitle2" destination="avk-3m-lHo" id="sgt-BC-pPv"/>
                         <outlet property="labelSubtitle3" destination="b9D-kA-X6r" id="O9e-lg-bzA"/>
@@ -222,10 +227,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="guide_automatic" width="150" height="267"/>
-        <image name="guide_automatic_detected" width="150" height="266"/>
-        <image name="guide_manually" width="150" height="267"/>
-        <image name="guide_manually_detected" width="150" height="266.5"/>
-        <image name="guide_settings" width="150" height="267"/>
+        <image name="guide_automatic_detected_vi" width="150" height="266"/>
+        <image name="guide_automatic_vi" width="150" height="267"/>
+        <image name="guide_manually_detected_vi" width="150" height="266.5"/>
+        <image name="guide_manually_vi" width="150" height="267"/>
+        <image name="guide_settings_vi" width="150" height="267"/>
     </resources>
 </document>

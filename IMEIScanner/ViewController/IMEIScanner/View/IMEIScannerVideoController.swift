@@ -96,6 +96,19 @@ class IMEIScannerVideoController: UIViewController, IMEIScannerViewProtocol, AVC
         self.view.layer.addSublayer(self.focusView.layer)
     }
     
+    private lazy var guideTextLayer: CATextLayer = {
+        let textlayer = CATextLayer()
+        textlayer.frame = CGRect(x: 0, y: 20, width: self.view.bounds.width, height: Constants.TITLE_HEIGHT)
+        textlayer.fontSize = 13
+        textlayer.alignmentMode = .center
+        textlayer.string = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_ACTION_SCAN)
+        textlayer.isWrapped = true
+        textlayer.truncationMode = .end
+        textlayer.backgroundColor = UIColor.clear.cgColor
+        textlayer.foregroundColor = UIColor.white.cgColor
+        return textlayer
+    }()
+    
     private func configBackground() {
         let frame = self.focusView.frame
         self.topView.frame = CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: frame.origin.y + Constants.FOCUS_BORDER))
@@ -108,17 +121,7 @@ class IMEIScannerVideoController: UIViewController, IMEIScannerViewProtocol, AVC
             return f
         }()
         
-        let textlayer = CATextLayer()
-        textlayer.frame = CGRect(x: 0, y: 20, width: self.view.bounds.width, height: Constants.TITLE_HEIGHT)
-        textlayer.fontSize = 13
-        textlayer.alignmentMode = .center
-        textlayer.string = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_ACTION_SCAN)
-        textlayer.isWrapped = true
-        textlayer.truncationMode = .end
-        textlayer.backgroundColor = UIColor.clear.cgColor
-        textlayer.foregroundColor = UIColor.white.cgColor
-        
-        self.topView.layer.addSublayer(textlayer)
+        self.topView.layer.addSublayer(self.guideTextLayer)
     }
     
     
@@ -189,7 +192,17 @@ class IMEIScannerVideoController: UIViewController, IMEIScannerViewProtocol, AVC
         self.startScanning()
         self.setupView()
         self.startLoadingView()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.updateLocale()
+    }
+    
+    private func updateLocale() {
         self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_AUTOMATIC_SCAN)
+        self.guideTextLayer.string = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_ACTION_SCAN)
     }
     
     deinit {

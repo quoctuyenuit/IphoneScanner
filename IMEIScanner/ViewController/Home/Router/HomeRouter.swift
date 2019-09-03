@@ -27,8 +27,8 @@ class HomeRouter: HomeRouterProtocol {
         presenter.interactor = interactor
         presenter.router = router
         
-//        return UINavigationController(
-        return view
+        return UINavigationController(rootViewController: view)
+//        return view
         
     }
 }

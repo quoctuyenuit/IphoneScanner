@@ -75,6 +75,16 @@ class IMEIScannerViewController: UIViewController, IMEIScannerViewProtocol {
         super.viewDidLoad()
         self.setupView()
         self.boxService?.delegate = self
+        self.updateLocale()
+    }
+    
+    override func onUpdateLocale() {
+        super.onUpdateLocale()
+        self.updateLocale()
+    }
+    
+    private func updateLocale() {
+        self.btnScanIMEI.setTitle(LocalizationHelper.shared.localized(.BUTTON_SCAN_IMEI), for: UIControl.State.normal)
         self.navigationItem.title = LocalizationHelper.shared.localized(LocalizationKeys.TITLE_MANUALLY_SCAN)
     }
 
@@ -185,6 +195,7 @@ extension IMEIScannerViewController {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let photoLibraryAction = UIAlertAction(title: LocalizationHelper.shared.localized(.SCAN_LIBRARY), style: .default) { (action) in
                 imagePicker.sourceType = .photoLibrary
+                imagePicker.modalPresentationStyle = .overFullScreen
                 self.present(imagePicker, animated: true, completion: nil)
             }
             alertController.addAction(photoLibraryAction)
@@ -193,14 +204,16 @@ extension IMEIScannerViewController {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let cameraAction = UIAlertAction(title: LocalizationHelper.shared.localized(.SCAN_CAMERA), style: .default) { (action) in
                 imagePicker.sourceType = .camera
+                imagePicker.modalPresentationStyle = .overFullScreen
                 self.present(imagePicker, animated: true, completion: nil)
             }
             alertController.addAction(cameraAction)
         }
         
         alertController.addAction(cancelAction)
-        
         alertController.popoverPresentationController?.sourceView = sender
+        
+        alertController.modalPresentationStyle = .overFullScreen
         self.present(alertController, animated: true, completion: nil)
     }
 }

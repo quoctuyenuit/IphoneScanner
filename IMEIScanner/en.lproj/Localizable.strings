@@ -57,3 +57,8 @@
 "SCAN_CHOOSE_IMAGE"="Choose photo source";
 "vi"="Vietnamese";
 "en"="English";
+"guide_automatic_detected"="guide_automatic_detected_en";
+"guide_automatic"="guide_automatic_en";
+"guide_manually_detected"="guide_manually_detected_en";
+"guide_manually"="guide_manually_en";
+"guide_settings"="guide_settings_en";

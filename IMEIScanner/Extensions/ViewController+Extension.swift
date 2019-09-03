@@ -15,5 +15,19 @@ extension UIViewController {
         view.addSubview(childController.view)
         childController.didMove(toParent: self)
     }
+    
+    func setupNavigationController() {
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.barTintColor = .appBase
+        self.navigationController?.navigationBar.isTranslucent = false
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = textAttributes
+    }
+    
+    @objc func onUpdateLocale() {
+        for vc: UIViewController in self.children {
+            vc.onUpdateLocale()
+        }
+    }
 }
 

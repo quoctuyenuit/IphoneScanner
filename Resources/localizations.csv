@@ -1,4 +1,4 @@
-﻿stt,key,vie,en
+﻿stt,key,vi,en
 1,NOTI_COPY_SUCCESS_MSG,Đã sao chép,Already copied
 2,NOTI_SCAN_FAILT,Không tìm thấy kết quả!,No results were found!
 3,TITLE_MANUALLY_SCAN,Quét thủ công,Manual scanning
@@ -38,17 +38,25 @@
 37,GUIDE_CONTENT4_1,Bật chế độ tự động sao chép bằng cách bất công tắc ở màn hình cài đặt.,Turn on the automatic copy mode by turning off the switch in the setting screen.
 38,TAB_HOME,Trang chủ,Home
 39,TAB_HISTORY,Lịch sử,History
-40,STORE_NAME,EXShop,EXShop
-41,,,
-42,,,
-43,,,
-44,,,
-45,,,
-46,,,
-47,,,
-48,,,
-49,,,
-50,,,
-51,,,
-52,,,
-53,,,
+40,TAB_SETTING,Cài đặt,Setting
+41,STORE_NAME,EXShop,EXShop
+42,SETTING_AUTO_COPY,Tự động sao chép,Automatically copy
+43,SETTING_LANGUAGE,Ngôn ngữ,Language
+44,SCAN_LIBRARY,Thư viện ảnh,Photo library
+45,SCAN_CAMERA,Máy ảnh,Camera
+46,SCAN_CANCEL,Huỷ,Cancel
+47,SCAN_CHOOSE_IMAGE,Chọn nguồn ảnh,Choose photo source
+48,vi,Tiếng việt,Vietnamese
+49,en,Tiếng Anh,English
+50,guide_automatic_detected,guide_automatic_detected_vi,guide_automatic_detected_en
+51,guide_automatic,guide_automatic_vi,guide_automatic_en
+52,guide_manually_detected,guide_manually_detected_vi,guide_manually_detected_en
+53,guide_manually,guide_manually_vi,guide_manually_en
+54,guide_settings,guide_settings_vi,guide_settings_en
+55,,,
+56,,,
+57,,,
+58,,,
+59,,,
+60,,,
+61,,,
