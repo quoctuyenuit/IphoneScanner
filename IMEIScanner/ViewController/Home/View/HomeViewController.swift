@@ -21,14 +21,13 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         return self.presenter?.getItems() ?? []
     }
     private var cellSize: CGSize {
-        let width: CGFloat = UIScreen.main.bounds.width / 2
+        let width: Int = Int(UIScreen.main.bounds.width / 2)
         return CGSize(width: width, height: width)
     }
     
     private lazy var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewLeftAlignedLayout()
         // Now setup the flowLayout required for drawing the cells
-        let space = 5.0 as CGFloat
         flowLayout.itemSize = cellSize
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 0
